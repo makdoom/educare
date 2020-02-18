@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Roboto&display=swap');
+
+/* FONT FAMILES 
+ font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing:0.5px;
+    overflow-x: hidden;
+}
+
+/* sticky navbar */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding:0 17px;
+    width:100%;
+    background: #000;
+    box-sizing: border-box;
+    transition: .5s;
+    z-index: 100;
+}
+header .logo{
+    height: 70px;
+    line-height: 0px;
+    float:left;
+    display: flex;
+}
+header .logo img{
+    height: 100%;
+    transition: .5s;
+}
+header h2{
+    color: #ffff;
+    margin:0;
+    text-transform: uppercase;
+    float:left;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 70px;
+    transition: .5s;
+}
+header nav{
+    float:right;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+}
+header nav ul li.subMenu:before{
+    content: '\f0dd';
+    font-family: fontAwesome;
+    line-height: 64px;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+}
+header nav ul li.active.subMenu:before{
+    content: '\f0de';
+    line-height: 75px;
+}
+header nav ul li ul{
+    position: absolute;
+    left:0;
+    background:#333;
+    display: none;   
+}
+header nav ul li.active ul{
+    display: block;
+}
+header nav ul li ul li{
+    display: block;
+    width: 220px;
+    transition: .5s;
+}
+header nav ul li ul li a{
+    font-size: 14px;
+}
+header nav ul li a{
+    height: 70px;
+    line-height: 70px;
+    padding: 0 15px;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    transition: .5s;
+}
+
+header nav ul li a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    transition: .5s;
+    background: linear-gradient(to right, #EC9F05, #FF4E00);
+}
+.menuToggle{
+    color: #fff;
+    float:right;
+    line-height: 70px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* -------------- LANDING PAGE ----------------- */
+
+.landingPage{
+    position: relative;
+    top: 70px;
+    left:0;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* display: flex; */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.landingPage .angleDiv{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background:khaki;
+    color: #fff;
+}
+.angleDiv .content{
+    width: calc(50% - 50px);
+    height: 100%;
+    background: #000;
+    padding: 2% 4%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.landingPage .imgBox{
+    width: calc(50% + 50px);
+    height: 100%;
+    background: khaki;
+    border-left: 100px solid #000;
+    border-bottom: 400px solid transparent;
+}
+.angleDiv .content .tagLine{
+    border: 1px solid #000;
+}
+.tagLine h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600px;
+}
+.tagLine p{
+    text-align: left;
+    text-transform: uppercase;
+    margin: 15px auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+.tagLine a{
+    text-align: justify;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 3% 8%;
+    border-radius: 30px;
+    transition: .5s;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(to right, #EC9F05, #FF4E00);
+}
+.tagLine a:hover{
+    transform: translateY(-12px);
+}
+.horizontal, .vertical{
+    background:#000;
+    height:30px;
+    width: 500px;
+}
+.horizontal{
+    position: absolute;
+    top: 162px;
+    right: 26%;
+    z-index: 0;
+    transform: rotate(-76deg);
+}
+/* -----------SLIDER --------- */
+.imgBox .slider{
+    width: 100%;
+    height: 400px;
+}
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+.carousel-inner{
+    width: calc(100% - 37px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-item img{
+    width:200px;
+    height: 250px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #000;
+}
+.carousel-item h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:#000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.carousel-item p{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.carousel-indicators {
+    margin-right: 65px;
+    margin-bottom: 1.5px;
+    
+}
+.carousel-indicators li{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+/* ----------- MEDIA QUIRIES ---------------- */
+
+/* FOR MOBILE PHONES */
+@media (max-width:768px){
+}
+@media (max-width:1024px){
+    header{
+        padding: 0 20px;
+    }
+    header .logo{
+        height:70px;
+    }
+    header .logo h2{
+        margin: 0 7px;
+        line-height: 60px;
+        font-weight: 600;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+    }
+    .logo img{
+        height: 100%;
+    }
+    header nav{
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100%-70px);
+        background: #000;
+        transition: .5s;
+    }
+    header nav.active{
+        left:0;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li{
+        width: 100%;
+        padding: 0;
+    }
+    header nav ul li a{
+        display: block;
+        height: 70px;
+        padding: 4px 0px;
+        line-height: 70px;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    header nav ul li.active ul{
+        position: relative;
+        background: #444444;
+    }
+    header nav ul li ul li{
+        width: 100%;
+    }
+    .menuToggle{
+        display: block;
+        line-height: 60px;
+    }
+}
+
+
+
+
+
+@media (max-width: 468px){
+     header{
+        padding: 0 10px;
+    }
+    header .logo{
+        height:60px;
+    }
+    header .logo h2{
+        line-height: 60px;
+        font-size: 1.4rem;
+    }
+    .logo img{
+        height: 100%;
+    }
+    header nav{
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100%-60px);
+        background: #333;
+        transition: .5s;
+    }
+    header nav.active{
+        left:0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li{
+        width: 100%;
+        padding: 0;
+    }
+    header nav ul li a{
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    header nav ul li.active ul{
+        position: relative;
+        background: #444444;
+    }
+    header nav ul li ul li{
+        width: 100%;
+    }
+    .menuToggle{
+        display: block;
+        line-height: 60px;
+    }
+
+    /* -----RESPONSIVE LANDING PAGE --- */
+    .landingPage{
+        top: 60px;
+        width: 100%;
+    }
+    .landingPage .angleDiv .content {
+        display: none;
+    }
+    .imgBox .slider{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background: transparent;
+    }
+}
+
+/* FOR TBALET AND IPADS */
+@media (min-width:769px) and (max-width:1023px){
+
+}
+
+/* DESKTOP AND LAPTOPS */
+@media (min-width:1024px){
+
+}
