@@ -9,7 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="css/course.css?v=<?php echo time(); ?>">
     
     <!-- FONTAWESOME CDN -->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -100,24 +101,3 @@
         <div class="horizontal"></div>
         <div class="vertical"></div>
     </div>
-    <!-- JQUERY CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- FOR MENU TOGGLE -->
-    <script>
-        $(document).ready(function(){
-            $('.menuToggle').click(function(){
-                $('nav').toggleClass('active');
-            });
-            $('ul li').hover(function(){
-                $(this).find('ul').stop().slideToggle(500);
-                $(this).toggleClass('active');
-                // $(this).find('ul').stop().slideToggle(400);
-                $(this).siblings().removeClass('active');
-                
-            
-            });
-        });
-    </script>
-    
-</body>
-</html>

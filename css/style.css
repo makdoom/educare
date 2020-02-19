@@ -141,7 +141,7 @@ header nav ul li a:hover{
     height: 400px;
     width: 100%;
     display: flex;
-    background:khaki;
+    background:#fdcb6e;
     color: #fff;
 }
 .angleDiv .content{
@@ -156,7 +156,7 @@ header nav ul li a:hover{
 .landingPage .imgBox{
     width: calc(50% + 50px);
     height: 100%;
-    background: khaki;
+    background: #fdcb6e;
     border-left: 100px solid #000;
     border-bottom: 400px solid transparent;
 }
@@ -192,18 +192,7 @@ header nav ul li a:hover{
 .tagLine a:hover{
     transform: translateY(-12px);
 }
-.horizontal, .vertical{
-    background:#000;
-    height:30px;
-    width: 500px;
-}
-.horizontal{
-    position: absolute;
-    top: 162px;
-    right: 26%;
-    z-index: 0;
-    transform: rotate(-76deg);
-}
+
 /* -----------SLIDER --------- */
 .imgBox .slider{
     width: 100%;
@@ -215,15 +204,16 @@ header nav ul li a:hover{
     height: 400px;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .carousel-inner{
     width: calc(100% - 37px);
     position: absolute;
     top: 0;
     right: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    
 }
 
 .carousel-item img{
@@ -235,7 +225,7 @@ header nav ul li a:hover{
 }
 .carousel-item h3{
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
     text-align: center;
     color:#000;
     font-weight: 600;
@@ -246,7 +236,7 @@ header nav ul li a:hover{
     padding: 0;
     color: #000;
     padding: 2px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -262,11 +252,78 @@ header nav ul li a:hover{
     border-radius: 100%;
     cursor: pointer;
 }
+
+/* -------------- DIRECTOR AREA ---------------- */
+
+.directorSec{
+    position: relative;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    margin: 30px 0px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+.directorSec .heading{
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+.directorSec .heading h1{
+    padding: 10px;
+}
+.directorSec .dirSection{
+    display: flex;
+    justify-content: center;
+    padding: 30px 70px;
+}
+.dirSection .imgbox{
+    width: 110rem;
+    height:17rem;
+    /* border: 1px solid #000; */
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    box-shadow: 0 10px 30px rgba(0,0,0,.7);
+}
+.dirSection .imgbox:hover img{
+    transform: scale(1.09);
+}
+.dirSection .imgbox img{
+    width: 90%;
+    transition: .5s;
+    height: 90%;
+}
+.dirSection .content{
+    padding: 15px 5px;
+    margin: 0 5px;
+    text-align: justify;
+}
+
+.dirSection .content p{
+    font-size: 18px;
+}
+.dirSection .content a{
+    text-align: justify;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 15px 0px;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-weight: 600px;
+    transition: .5s;
+    background: linear-gradient(to right, #EC9F05, #FF4E00);
+}
+.dirSection .content a:hover{
+    transform:translateY(-12px);
+}
+/* ------------- END OF DIRECTOR AREA ---------- */
 /* ----------- MEDIA QUIRIES ---------------- */
 
 /* FOR MOBILE PHONES */
-@media (max-width:768px){
-}
 @media (max-width:1024px){
     header{
         padding: 0 20px;
@@ -321,6 +378,9 @@ header nav ul li a:hover{
     .menuToggle{
         display: block;
         line-height: 60px;
+    }
+    .horizontal{
+        display: none;
     }
 }
 
@@ -383,6 +443,7 @@ header nav ul li a:hover{
     .landingPage{
         top: 60px;
         width: 100%;
+        height:300px;
     }
     .landingPage .angleDiv .content {
         display: none;
@@ -394,14 +455,84 @@ header nav ul li a:hover{
         width: 100%;
         background: transparent;
     }
+    .horizontal{
+        display: none;
+    }
+    .carousel{
+        height: 300px;
+    }
+    .carousel-item img{
+        width:100px;
+        height: 150px;
+        margin: 8px;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px #000;
+    }
+
+    /* --------------DIRECTOR AREA ------------ */
+    
+    .directorSec{
+        margin-top: 0;
+    }
+    .directorSec .heading h1{
+        font-size: 30px;
+        padding: 15px 5px;
+    }
+    .directorSec .dirSection{
+        display: block;
+        text-align: center;
+        padding: 5px 0px;
+        margin: 10px 0;
+        
+    }
+    .dirSection .imgbox{
+        width:300px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    .dirSection .imgbox img{
+        height: 90%;
+        width: 90%;
+        border-top: 1px solid #fff;
+    }
+    .dirSection .content{
+        padding: 15px;
+        padding-top: 30px;
+    }
 }
 
 /* FOR TBALET AND IPADS */
-@media (min-width:769px) and (max-width:1023px){
-
+@media (min-width:469px) and (max-width:769px){
+    .angleDiv .tagLine h1{
+        font-size: 30px;
+    }
+    .angleDiv .tagLine p{
+        font-size: 15px;
+    }
+    .tagLine a{
+        margin: 15px 0px;
+        padding: 3% 6%;
+        font-size: 15px;
+    }
+    .carousel-item img{
+        width:150px;
+        height: 150px;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        height: 206px;
+        width: 14px;
+    }
 }
-
 /* DESKTOP AND LAPTOPS */
 @media (min-width:1024px){
-
+    .horizontal{
+        position: absolute;
+        background: black;
+        top: 30%;
+        left: calc(50% - 44%);
+        width: 100%;
+        z-index: 50;
+        height: 40px;
+        transform: rotate(104deg);
+    }
 }
