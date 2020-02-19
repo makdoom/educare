@@ -7,12 +7,13 @@
     left: 0;
     width: 100%;
     height: 600px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 .course-section .slant{
     width: 100%;
-    height: 100%;
+    height: 700px;
     background: #fdcb6e;
+    border: 1px solid #000;
     position: relative;  
 }
 .course-section .slantdiv{
@@ -20,19 +21,21 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 700px;
     background: #fdcb6e;
     transform: skewY(5deg);
     transform-origin: top right;
     z-index: -1;
 }
 .slant .content {
-    display: flex;
+    /* display: flex;
+    border: 1px solid #000; */
 }
 .slant .content .detail{
     width: 60%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding: 20px;
+    padding-left:  70px;
 }
 .slant .content .detail h1{
     text-transform: uppercase;
@@ -44,24 +47,96 @@
     font-size: 18px;
 }
 /* -------------- ADMISSION SECTION ------------ */
-.slant .content .admission{
+.slant .admission{
     width: 30%;
     position: absolute;
-    top: -19%;
-    right: 5%;
-    border: 1px solid #000;
-    padding: 10px 12px;
+    top: -21%;
+    right: 6%;
+    padding: 10px 18px;
     box-shadow: 5px 10px 30px rgba(0,0,0,0.7);
     background: #ffffff;
 }
-.slant .content .admission .inputs{
-    border: 1px solid #000;
+.admission h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.slant .admission .inputs{
+    /* border: 1px solid #000; */
     box-sizing: border-box;
+    text-align: center;
 }
 .admission .inputs input, select, textarea{
     width: 100%;
     padding: 5px;
     margin: 5px auto;
+    outline: none;
 }
+#submitbtn{
+    width: 100px;
+    padding: 8px 15px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    outline: none;
+    background: linear-gradient(to right, #EC9F05, #FF4E00);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.courses{
+    width: 100%;
+    border: 1px solid #000;
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 70px;
+    overflow: hidden;
+}
+.courses .box{
+    padding: 15px;
+    text-align: center;
+    transition: .5s;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+.courses .box:hover{
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.7);
+}
+.courses .box p{
+    text-align: justify;
+    padding: 5px 5px;
+}
+.courses .box a{
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: .5s;
+    background: linear-gradient(to right, #EC9F05, #FF4E00);
+}
+.courses .box a:hover{
+    transform: translateY(-10px);
+}
+
+/* ----------- MEDIA QUIRES ---------------- */
+
+/* FOR MOBILE PHONES */
+
+@media (max-width: 468px){
+    
+
+}
+@media (min-width:469px) and (max-width:768px){
+    
+}
+@media (max-width:1024px){
+   
+}
+
+
 
 

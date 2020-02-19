@@ -141,7 +141,7 @@ header nav ul li a:hover{
     height: 400px;
     width: 100%;
     display: flex;
-    background:#fdcb6e;
+    background:#f9ca24;
     color: #fff;
 }
 .angleDiv .content{
@@ -156,7 +156,7 @@ header nav ul li a:hover{
 .landingPage .imgBox{
     width: calc(50% + 50px);
     height: 100%;
-    background: #fdcb6e;
+    background: #f9ca24;
     border-left: 100px solid #000;
     border-bottom: 400px solid transparent;
 }
@@ -262,7 +262,6 @@ header nav ul li a:hover{
     left: 0;
     margin: 30px 0px;
     box-sizing: border-box;
-    border: 1px solid #000;
 }
 .directorSec .heading{
     text-align: center;
@@ -323,7 +322,7 @@ header nav ul li a:hover{
 /* ------------- END OF DIRECTOR AREA ---------- */
 /* ----------- MEDIA QUIRIES ---------------- */
 
-/* FOR MOBILE PHONES */
+/* FOR TABLETS, IPAD  */
 @media (max-width:1024px){
     header{
         padding: 0 20px;
@@ -387,7 +386,7 @@ header nav ul li a:hover{
 
 
 
-
+/* ---------- MOBILE PHONES -------------------- */
 @media (max-width: 468px){
      header{
         padding: 0 10px;
