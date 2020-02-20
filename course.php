@@ -15,18 +15,20 @@
                         <input type="text" placeholder="Full Name" required="required"> 
                         <input type="email" placeholder="Email"required="required">
                         <input type="text" placeholder="Location"required="required">
-                        <select name="Choose Course" id="" required="required">
+                        <select name="Choose Course"  required="required">
                             <option value="course">Select Course</option>
                             <option value="secondary">secondary</option>
                             <option value="higher secondary">higher secondary </option>
                             <option value="pharmacy">pharmacy</option>
                         </select>
-                        <textarea name="" id="" placeholder="Message"></textarea>
+                        <textarea name=""  placeholder="Message"></textarea>
                         <input type="submit" value="Submit" id="submitbtn">
                     </form>
                 </div>
             </div>
-            <div class="courses">
+            
+        <div class="slantdiv"></div>
+        <div class="courses">
                 <div class="box">
                     <h3>Secondary</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores commodi esse reprehenderit molestiae voluptatum cupiditate aliquam ducimus! Dolore recusandae ex eum excepturi aut eius odio harum dolorem </p>
@@ -43,7 +45,6 @@
                     <a href="#">Read More</a>
                 </div>
             </div>
-        <div class="slantdiv"></div>
     </div>
 
 </div>

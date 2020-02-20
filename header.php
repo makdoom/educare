@@ -11,6 +11,7 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="css/course.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="font/flaticon.css?v=<?php echo time(); ?>">
     
     <!-- FONTAWESOME CDN -->
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">

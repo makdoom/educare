@@ -13,7 +13,6 @@
     width: 100%;
     height: 700px;
     background: #fdcb6e;
-    border: 1px solid #000;
     position: relative;  
 }
 .course-section .slantdiv{
@@ -85,13 +84,13 @@
 }
 .courses{
     width: 100%;
-    border: 1px solid #000;
-    /* height: 400px; */
+    height: 400px;
+    background: #fdcb6e;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 70px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .courses .box{
     padding: 15px;
@@ -126,15 +125,80 @@
 
 /* FOR MOBILE PHONES */
 
-@media (max-width: 468px){
-    
+@media (min-width:320px) and (max-width:468px){
+    .course-section{
+        top:150px;
+    }
+    .admission{
+        display: none;
+    }
+    .slant .content{
+        display: block;
+    }
+    .slant .content .detail{
+        width: 100%;
+        padding: 0px;
+        padding: 20px;
+    }
+    .slantdiv , .slant{
+        height: 800px;
+    }
+    .courses{
+        display: block;
+        height: 900px;
+        padding: 0;
+    }
+    .courses .box{
+        width: 100%;
+        margin: 20px 0px;
+    }
+}
+@media (min-width:469px) and (max-width: 768px){
+    .course-section{
+        top:150px;
+    }
+    .admission{
+        display: none;
+    }
+    .slantdiv , .slant{
+        height: 850px;
+    }
+    .slant .content{
+        display: block;
+    }
+    .slant .content .detail{
+        width: 100%;
+        padding: 0px;
+        padding: 20px;
+    }
+    .courses{
+        display: block;
+        height: 600px;
+        padding: 10px 40px;
+    }
+    .courses .box{
+        margin: 0;
+        padding: 0;
+        margin: 8px;
+        padding: 5px 8px;
+    }
+    .courses .box h3{
+        font-size: 23px;
+    }
+    .courses .box p{
+        text-align: center;
+    }
+    .courses .box a{
+        padding: 5px 10px;
+        
+    }
 
 }
-@media (min-width:469px) and (max-width:768px){
-    
-}
 @media (max-width:1024px){
-   
+    .courses{
+        /* display: block; */
+        height: 450px;
+    }
 }
 
 

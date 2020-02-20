@@ -7,6 +7,7 @@ font-family: 'Poppins', sans-serif; */
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0px;
@@ -320,6 +321,65 @@ header nav ul li a:hover{
     transform:translateY(-12px);
 }
 /* ------------- END OF DIRECTOR AREA ---------- */
+
+
+/* --------------COUNTING SECTION -------------- */
+
+.counting-section{
+    position: relative;
+    top:350px;
+    left: 0px;
+    height: 500px;
+    width: 100%;
+}
+.mainCounter{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.mainCounter .bgimge{
+    background-image: url(../image/counter.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.mainCounter .countingArea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainCounter .countingArea .count{
+    margin: 50px;
+    padding: 40px;
+    text-align: center;
+}
+.mainCounter .countingArea .count span{
+    text-align: center;
+    display: inline-block;
+}
+.mainCounter .countingArea .count span::before{
+    margin-left: 0;
+    text-align: center;
+    font-size: 65px;
+}
+.mainCounter .countingArea .count h1{
+    font-weight: 800;
+    padding-top: 10px;
+}
+.mainCounter .countingArea .count h4{
+    font-size: 25px;
+}
+
+/* -----------------END OF COUNTING SECTION--------------- */
+
 /* ----------- MEDIA QUIRIES ---------------- */
 
 /* FOR TABLETS, IPAD  */
@@ -387,7 +447,7 @@ header nav ul li a:hover{
 
 
 /* ---------- MOBILE PHONES -------------------- */
-@media (max-width: 468px){
+@media (max-width: 768px){
      header{
         padding: 0 10px;
     }
