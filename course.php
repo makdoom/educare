@@ -27,7 +27,7 @@
                 </div>
             </div>
             
-        <div class="slantdiv"></div>
+        <!-- <div class="slantdiv"></div> -->
         <div class="courses">
                 <div class="box">
                     <h3>Secondary</h3>

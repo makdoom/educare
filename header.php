@@ -14,8 +14,12 @@
     <link rel="stylesheet" href="font/flaticon.css?v=<?php echo time(); ?>">
     
     <!-- FONTAWESOME CDN -->
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- SCRIPTS -->
+     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+     <script src="js/main.js"></script>
+    
     <title>educare</title>
 </head>
 <body>

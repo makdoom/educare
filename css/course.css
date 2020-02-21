@@ -3,30 +3,23 @@
 
 .course-section{
     position: relative;
-    top: 250px;
+    top: 270px;
     left: 0;
     width: 100%;
-    height: 600px;
-    /* border: 1px solid #000; */
+    height: 750px;
 }
 .course-section .slant{
     width: 100%;
-    height: 700px;
+    height: 750px;
     background: #fdcb6e;
     position: relative;  
-}
-.course-section .slantdiv{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 700px;
-    background: #fdcb6e;
     transform: skewY(5deg);
-    transform-origin: top right;
-    z-index: -1;
+
 }
+
 .slant .content {
+    transform: skewY(-5deg);
+
     /* display: flex;
     border: 1px solid #000; */
 }
@@ -47,11 +40,13 @@
 }
 /* -------------- ADMISSION SECTION ------------ */
 .slant .admission{
-    width: 30%;
+    width: 350px;
+    transform: skewY(-5deg);
     position: absolute;
-    top: -21%;
+    top: -27%;
+    z-index: 20;
     right: 6%;
-    padding: 10px 18px;
+    padding: 20px 18px;
     box-shadow: 5px 10px 30px rgba(0,0,0,0.7);
     background: #ffffff;
 }
@@ -60,13 +55,14 @@
     text-transform: uppercase;
 }
 .slant .admission .inputs{
-    /* border: 1px solid #000; */
     box-sizing: border-box;
     text-align: center;
 }
 .admission .inputs input, select, textarea{
     width: 100%;
-    padding: 5px;
+    padding: 8px 5px;
+    border-radius: 10px;
+    border: 1px solid #868484;
     margin: 5px auto;
     outline: none;
 }
@@ -84,12 +80,15 @@
 }
 .courses{
     width: 100%;
+    transform: skewY(-5deg);
     height: 400px;
     background: #fdcb6e;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px auto;
     padding: 20px 70px;
+    /* border: 1px solid #000; */
     /* overflow: hidden; */
 }
 .courses .box{
@@ -127,7 +126,7 @@
 
 @media (min-width:320px) and (max-width:468px){
     .course-section{
-        top:150px;
+        top:170px;
     }
     .admission{
         display: none;
@@ -147,6 +146,7 @@
         display: block;
         height: 900px;
         padding: 0;
+        margin: 0;
     }
     .courses .box{
         width: 100%;
@@ -156,12 +156,14 @@
 @media (min-width:469px) and (max-width: 768px){
     .course-section{
         top:150px;
+        height:850px;
     }
     .admission{
         display: none;
     }
     .slantdiv , .slant{
-        height: 850px;
+        height: 1200px;
+        border: 1px solid #000;
     }
     .slant .content{
         display: block;
@@ -173,6 +175,7 @@
     }
     .courses{
         display: block;
+        margin: 0;
         height: 600px;
         padding: 10px 40px;
     }

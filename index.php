@@ -24,37 +24,15 @@
     include "course.php";
 ?>
 
-<div class="counting-section">
-    <div class="mainCounter">
-        <div class="bgimge"></div>
-        <div class="countingArea">
-            <div class="count">
-                <span class="flaticon-study"></span>
-                <h1 class="counter">500</h1>
-                <h4>Students</h4>
+<div class="newsSection container-fluid">
+    <div class="newsArea">
+            <div class="acordion">
             </div>
-            <div class="count">
-                <span class="flaticon-education"></span>
-                <h1 class="counter">15</h1>
-                <h4>Teachers</h4>
-            </div>
-            <div class="count">
-                <span class="flaticon-online-course"></span>
-                <h1 class="counter">20</h1>
-                <h4>Courses</h4>
-            </div>
-            <div class="count">
-                <span class="flaticon-book"></span>
-                <h1 class="counter">800</h1>
-                <h4>Books</h4>
-            </div>
-        </div>
+        <div class="upcoming">upcomming events section goes here</div>
+        <div class="latest">latest news section goes here</div>
     </div>
 
-
 </div>
-
-
 <?php
     include "footer.php";
 ?>
