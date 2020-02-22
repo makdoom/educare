@@ -88,11 +88,34 @@
 
 <!-- COUNTER SECTION -->
 
-<!-- <div class="counting_section">
-    makdoomshaikh
-    <div class="slant"></div>
-    <div class="slanted_div"></div>
-</div> -->
+<div class="counting_section">
+    <div class="slant">
+        <div class="slanted_div">
+            <div class="counting_area">
+                <div class="count_box">
+                    <span class="flaticon-education"></span>
+                    <h1 class="counter">15</h1>
+                    <p>All Teachers</p>
+                </div>
+                <div class="count_box">
+                    <span class="flaticon-study"></span>
+                    <h1 class="counter">700 </h1>
+                    <p>All students</p>
+                </div>
+                <div class="count_box">
+                    <span class="flaticon-online-course"></span>
+                    <h1 class="counter">10 </h1>
+                    <p>Courses</p>
+                </div>
+                <div class="count_box">
+                    <span class="flaticon-book"></span>
+                    <h1 class="counter">800 </h1>
+                    <p>Books</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
 
 <!-- / COUNTER SECTION -->
