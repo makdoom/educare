@@ -24,15 +24,78 @@
     include "course.php";
 ?>
 
+<!-- --------------ACCORDION SECTION -------------- -->
 <div class="newsSection container-fluid">
     <div class="newsArea">
-            <div class="acordion">
+        <div class="wrapper">
+            
+            <h3>Why choose us ?</h3>
+            <div class="accordion_wrap">
+                <div class="accordion_header">
+                    <h5>What is your name ?</h5>
+                </div>
+                <div class="accordion_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quidem. Nisi labore vel quia ducimus soluta incidunt atque cupiditate officiis.</p> 
+                </div>
             </div>
-        <div class="upcoming">upcomming events section goes here</div>
-        <div class="latest">latest news section goes here</div>
-    </div>
+            <div class="accordion_wrap">
+                <div class="accordion_header">
+                    <h5>What is your father name ?</h5>
+                </div>
+                <div class="accordion_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quidem. Nisi labore vel quia ducimus soluta incidunt atque cupiditate officiis.</p> 
+                </div>
+            </div>
+            <div class="accordion_wrap">
+                <div class="accordion_header">
+                    <h5>What is your mother name?</h5>
+                </div>
+                <div class="accordion_body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quidem. Nisi labore vel quia ducimus soluta incidunt atque cupiditate officiis.</p> 
+                </div>
+            </div>
+        </div>
 
+        <div class="upcoming_box">
+            <h3>Upcoming events</h3>
+            <div class="upcoming">
+                <div class="date">
+                    <span>22</span>
+                    <span class="month">Mar</span>
+                </div>
+                <div class="detail"><span>HSC Board Examination</span></div>
+            </div>
+            <div class="upcoming">
+                <div class="date">
+                    <span>28</span>
+                    <span class="month">Apr</span>
+                </div>
+                <div class="detail"><span>SSC Board Examination</span></div>
+            </div>
+            <div class="upcoming">
+                <div class="date">
+                    <span>13</span>
+                    <span class="month">Sep</span>
+                </div>
+                <div class="detail"><span>Pharmacy Examination</span></div>
+            </div>
+            
+        </div>
+    </div>
 </div>
+
+<!-- ------------------/ ACCORDION SECTION ---------------- -->
+
+<!-- COUNTER SECTION -->
+
+<!-- <div class="counting_section">
+    makdoomshaikh
+    <div class="slant"></div>
+    <div class="slanted_div"></div>
+</div> -->
+    
+
+<!-- / COUNTER SECTION -->
 <?php
     include "footer.php";
 ?>

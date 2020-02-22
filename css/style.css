@@ -325,10 +325,9 @@ header nav ul li a:hover{
 
 .newsSection{
     position: relative;
-    top: 50vh;
+    top: 40vh;
     height: 400px;
     width: 100%;
-    border: 2px solid red;
     box-sizing: border-box;
     /* background: red; */
 }
@@ -337,9 +336,179 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items:center;
+    /* padding: 70px; */
+}
+/* ----------------- ACCORDION SECTION ----------- */
+.wrapper{
+    margin: 0;
+    padding: 0;
+    width:400px;
+   /* border: 1px solid #000; */
+    margin: 20px;
+}
+.wrapper h3{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+
+}
+.wrapper .accordion_wrap .accordion_header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    background: #fdcb6e;
+    /* border-top: 2px solid #fff; */
+    color:#000;
+    padding: 6px;
+    font-weight: 800;
+    /* border-bottom: ; */
+    position: relative;
+    cursor: pointer;
+}
+.wrapper .accordion_wrap .accordion_header h5{
+    height: 38px;
+    transition: all 0.5s ease;
+    line-height: 38px;
+}
+.wrapper .accordion_wrap .accordion_header h5:hover{
+    color: #000;
+}
+/* .wrapper .acordion_wrap:first-child .acordion_header */
+
+.wrapper .accordion_wrap .accordion_header:hover{
+    background: linear-gradient(to right, #EC9F05, #FF4E00);
+}
+.wrapper .accordion_wrap .accordion_header:hover h5{
+    color: #ffff;
+}
+.wrapper .accordion_wrap .accordion_header:hover:before,
+.wrapper .accordion_wrap .accordion_header:hover:after{
+    background-color: #fff;
+}
+
+.wrapper .accordion_wrap .accordion_header:before,
+.wrapper .accordion_wrap .accordion_header:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+.wrapper .accordion_wrap .accordion_header:after{
+    transform: rotate(-90deg);
+    transition: all 0.5s ease;
+}
+.wrapper .accordion_wrap .accordion_body{
+    width: 100%;
+    height:0px;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+.wrapper .accordion_wrap .accordion_body p{
+    padding: 15px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 22px;
+}
+.wrapper .accordion_wrap .accordion_header.active:after{
+    transform: rotate(0);
+}
+.wrapper .accordion_wrap .accordion_header.active + .accordion_body{
+    height: 150px;
+}
+/* ---------------------/ ACCORDION SECTION --------------- */
+
+/* ---------------------UPCOMING EVENTS SECTION ------------ */
+
+
+.upcoming_box{
+    /* border: 1px solid #000; */
+    margin: 20px;
+    padding: 15px;
+    transition: all .5s ease;
+}
+.upcoming_box h3{
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* border: 1px solid #000; */
+    margin:8px auto;
+    
+}
+.upcoming{
+    /* border: 1px solid #000; */
+    /* padding: 6px; */
+    display: flex;
+    margin: 10px auto;
+    transition: .5s;
+}
+.upcoming .date{
+    margin: 0;
+    /* border: 1px solid #000; */
+    font-size: 25px;
+    cursor: pointer;
+    padding: 8px;
+    color: #fff;
+    background: linear-gradient(to right, #EC9F05, #FF4E00);
+    
+}
+.upcoming .date .month{
+    font-size: 14px;
+    /* border: 1px solid #000; */
+}
+
+.upcoming .detail{
+    /* border: 1px solid #000; */
+    font-size: 19px;
+    margin: 0px 12px;
+    /* width: 100%; */
+    padding: 8px;
+}
+.upcoming_box:hover {
+    /* background: #fdcb6e; */
+    box-shadow: 5px 5px 15px #000;  
+    border: none;
 }
 
 
+
+/* ----------------------/ UPCOMING EVENTS SECTION ------------ */
+
+
+/* -----------------COUNTER SECTION ---------------------*/
+
+.counting_section{
+    border: 1px solid #000;
+    position: relative;
+    top:45vh;
+    left:0;
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+/* -------------------/ COUNTER SECTION ----------------------- */
+
+/* ------------------- LATEST NEWS SECTION ------------- */
+
+.latest_news{
+    border: 1px solid #000;
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+}
+
+
+
+
+/* --------------------/LATEST NEWS SECTION ------------- */
 /* / NEWS AND UPDATE SECTION */
 
 /* ----------- MEDIA QUIRIES ---------------- */
@@ -542,6 +711,24 @@ header nav ul li a:hover{
     .carousel-control-next, .carousel-control-prev{
         height: 206px;
         width: 14px;
+    }
+    .newsSection{
+        top: 20vh;
+    }
+}
+@media (min-width:320px) and (max-width:468px){
+    .newsSection{
+        top:105vh;
+        /* background-color:red; */
+    }
+    .newsSection .newsArea{
+        display: block;
+        width: 100%;
+    }
+    .newsSection .newsArea .wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 }
 /* DESKTOP AND LAPTOPS */

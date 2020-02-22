@@ -11,10 +11,11 @@ $(document).ready(function () {
         $(this).siblings().removeClass('active');
     });
 
-    // CHOOSE US SECTION
-    // $('.choose-content').slideUp();
+  
+   
 });
- 
+// CHOOSE US SECTION
+
 // $(document).on('click', '.toggle',function(){
 //     $(".choose-content").toggleClass('active');
 // });
