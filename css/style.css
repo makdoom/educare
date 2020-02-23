@@ -523,7 +523,6 @@ header nav ul li a:hover{
     align-items: center;
 }
 .counting_area .count_box {
-    /* border: 1px solid #fff; */
     color:#fff;
     margin: 40px;
     width: 200px;
@@ -551,20 +550,91 @@ header nav ul li a:hover{
 
 /* -------------------/ COUNTER SECTION ----------------------- */
 
-/* ------------------- LATEST NEWS SECTION ------------- */
+/* / NEWS AND UPDATE SECTION */
 
-.latest_news{
-    border: 1px solid #000;
-    margin: 15px;
-    padding: 15px;
-    width: 250px;
+/* ----------------- TESTIMONIAL SECTION ----------*/
+
+
+.testimonial_section{
+    width: 100%;
+    height:800px;
+    position: relative;
+    top:70vh;
+    /* background: #000; */
+}
+.testimonial_section .testimonial{
+    /* border: 1px solid #000; */
+    text-align: center;
+    padding: 30px 30px 50px;
+    background: #fdcb6e;
+    margin: 0 15px 30px;
+    position: relative;
+    margin-top: 168px;
+}
+.testimonial_section .testimonial:before,
+.testimonial_section .testimonial:after{
+    content: '';
+    border-top: 40px solid #fdcb6e;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom:-40px;
+    left: 0;
+}
+.testimonial_section .testimonial:after{
+    border-right: none;
+    border-left: 125px solid transparent;
+    left:auto;
+    right:0
+}
+.testimonial_section .testimonial .icon{
+    display: inline-block;
+    font-size: 80px;
+    color: #FF4E00;
+    margin-bottom: 20px;
+    /* opacity: 0.6; */
+
+}
+.testimonial_section .testimonial .description{
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+.testimonial .testimonial_content{
+    width: 100%;
+    position: absolute;
+    left:0;
+}
+.testimonial .testimonial_content .img{
+    display: inline-block;
+    border:6px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #000;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.testimonial .testimonial_content .img img{
+    width: 120px !important;
+    height: 120px;
+}
+.testimonial .testimonial_content .title{
+    /* font-size: 19px; */
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 690px;
 }
 
 
 
-
-/* --------------------/LATEST NEWS SECTION ------------- */
-/* / NEWS AND UPDATE SECTION */
+/*-------------------- /TESTIMONIAL SECTION ------------*/
 
 /* ----------- MEDIA QUIRIES ---------------- */
 
@@ -744,6 +814,26 @@ header nav ul li a:hover{
         padding: 15px;
         padding-top: 30px;
     }
+    /* ---------------- COUNTER SECTION --------------- */
+    .counting_section{
+        top:50vh;
+    }
+    .counting_section , 
+    .counting_section .slant ,
+    .counting_section .slant .slanted_div{
+        height: 1050px;
+    }
+    .counting_section .counting_area{
+        display: block;
+    }
+    .counting_section .counting_area .count_box{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .testimonial_section{
+        top:150vh;
+    }
 }
 
 /* FOR TBALET AND IPADS */
@@ -784,6 +874,9 @@ header nav ul li a:hover{
         margin: 0;
         padding: 0;
         width: 100%;
+    }
+    .counting_section{
+        top:160vh;
     }
 }
 /* DESKTOP AND LAPTOPS */

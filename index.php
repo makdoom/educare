@@ -119,6 +119,97 @@
     
 
 <!-- / COUNTER SECTION -->
+
+
+
+<!-- TESTIMONIAL SECTION -->
+
+
+    <div class="testimonial_section">
+        <div class="demo">
+            <div class="container">
+                <div class="row">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <span class="icon fa fa-quote-left"></span>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta doloribus, saepe quae minus assumenda possimus reiciendis et quia, debitis officiis deserunt, sapiente nostrum! Consequatur.
+                            </p>
+                            <div class="testimonial_content">
+                                <div class="img">
+                                    <img src="image/tslide1.jpg" alt="">
+                                </div>
+                                <h3 class="title">Jenifer</h3>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <span class="icon fa fa-quote-left"></span>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta doloribus, saepe quae minus assumenda possimus reiciendis et quia, debitis officiis deserunt, sapiente nostrum! Consequatur.
+                            </p>
+                            <div class="testimonial_content">
+                                <div class="img">
+                                    <img src="image/tslide2.jpg" alt="">
+                                </div>
+                                <h3 class="title">Kristina</h3>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <span class="icon fa fa-quote-left"></span>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta doloribus, saepe quae minus assumenda possimus reiciendis et quia, debitis officiis deserunt, sapiente nostrum! Consequatur.
+                            </p>
+                            <div class="testimonial_content">
+                                <div class="img">
+                                    <img src="image/tslide3.jpg" alt="">
+                                </div>
+                                <h3 class="title">Ahad</h3>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <span class="icon fa fa-quote-left"></span>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta doloribus, saepe quae minus assumenda possimus reiciendis et quia, debitis officiis deserunt, sapiente nostrum! Consequatur.
+                            </p>
+                            <div class="testimonial_content">
+                                <div class="img">
+                                    <img src="image/tslide4.jpg" alt="">
+                                </div>
+                                <h3 class="title">Ayub</h3>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <span class="icon fa fa-quote-left"></span>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta doloribus, saepe quae minus assumenda possimus reiciendis et quia, debitis officiis deserunt, sapiente nostrum! Consequatur.
+                            </p>
+                            <div class="testimonial_content">
+                                <div class="img">
+                                    <img src="image/tslide5.jpg" alt="">
+                                </div>
+                                <h3 class="title">Charles</h3>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <span class="icon fa fa-quote-left"></span>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam soluta doloribus, saepe quae minus assumenda possimus reiciendis et quia, debitis officiis deserunt, sapiente nostrum! Consequatur.
+                            </p>
+                            <div class="testimonial_content">
+                                <div class="img">
+                                    <img src="image/tslide6.jpg" alt="">
+                                </div>
+                                <h3 class="title">Arman</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- / TESTIMONIAL SECTION -->
 <?php
     include "footer.php";
 ?>
