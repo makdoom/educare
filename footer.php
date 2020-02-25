@@ -1,4 +1,33 @@
-<!-- --------- OWL CAROUSEL ---------- -->
+<footer>
+    <div class="footer_container">
+        <div class="left_col">
+            <div class="address">
+                <a href="#">makshaikh99@gmail.com</a>
+               
+                <p>
+                     <i class="fa fa-map-marker"></i>Edu-Care – Teacher’s Bureau 38 C, Beniatola St, Sovabazar, Beniatola, Mumbai, 400058.
+                </p>
+                <p>&copy;<script> document.write(new Date().getFullYear());</script> All Rights Reserved </p>
+
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="news_letter">
+                <input type="text" placeholder="Email"><br>                    <input type="submit" value="Submit">
+            </div>
+            <div class="social_icons">
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+           </div>
+        </div>
+
+        
+    </div>
+</footer>
+
+
+
 
 
 
