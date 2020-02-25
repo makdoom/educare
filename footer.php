@@ -1,25 +1,47 @@
 <footer>
     <div class="footer_container">
         <div class="left_col">
-            <div class="address">
-                <a href="#">makshaikh99@gmail.com</a>
-               
-                <p>
-                     <i class="fa fa-map-marker"></i>Edu-Care – Teacher’s Bureau 38 C, Beniatola St, Sovabazar, Beniatola, Mumbai, 400058.
-                </p>
-                <p>&copy;<script> document.write(new Date().getFullYear());</script> All Rights Reserved </p>
+            <div class="add">
+                <i class="fa fa-map-marker"></i>
+                    <p>
+                        Edu-Care – Teacher’s Bureau 38 C, <br> Beniatola St, Sovabazar,  Beniatola, <br> Mumbai, 400058.
+                    </p>
+            </div>
 
+            <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    <a href="#">makshaikh99@gmail.com</a>
             </div>
+
+             <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    <span>9874561238</span>
+            </div>
+            <div class="phone">
+                <i class="fa fa-phone"></i>
+                <span>9874561238</span>
+            </div>
+ 
+             <p class="copy_right">&copy; <script> document.write(new Date().getFullYear());</script> All Rights Reserved </p>
+           
         </div>
-        <div class="right-col">
-            <div class="news_letter">
-                <input type="text" placeholder="Email"><br>                    <input type="submit" value="Submit">
-            </div>
+
+
+
+        <div class="right_col">
+            <h2>our newsletter</h2>
+            <div class="btm-border"></div>
+            <p>Enter your email to get our news and updates</p>
+            <form action="#" class="newsletter_form">
+                <input class="txtb" type="text" placeholder=" Enter Your Email ">
+                <input class="submit-btn" type="submit" value="Subscribe">
+
+            </form>
             <div class="social_icons">
-                <i class="fa fa-youtube"></i>
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-instagram"></i>
-           </div>
+                <a href="#" ><i class="fa fa-youtube"></i></a>
+                <a href="#" ><i class="fa fa-facebook"></i></a>
+                <a href="#" ><i class="fa fa-instagram"></i></a>
+            </div>
         </div>
 
         
@@ -49,7 +71,7 @@
 
     $('.counter').counterUp({
         delay: 10,
-        time: 3000
+        time: 2000
     });
 
     $("#testimonial-slider").owlCarousel({
